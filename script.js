@@ -40,6 +40,8 @@ function drawWatch(){
   var mX, mY;
   mX=Math.cos(minAngle)*R+R;
   mY=-Math.sin(minAngle)*R+R;
+  mY= 0.7 * mY;
+  mX= 0.7 * mX;
   line.moveTo(mX,mY);
   line.lineTo(R,R);
   conext.stroke(line);
@@ -47,6 +49,8 @@ function drawWatch(){
   var hX, hY;
   hX=Math.cos(hAngle)*R+R;
   hY=-Math.sin(hAngle)*R+R;
+  hX= hX * 0.5;
+  hY= hY * 0.5;
   line.moveTo(hX,hY);
   line.lineTo(R,R);
   conext.stroke(line);
