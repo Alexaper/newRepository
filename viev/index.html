@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <div id="app">
+            <p>{{one}}</p>
+            <input type="range" min="0" max="5" step="1" value="5" v-model="one"> 
+        </div>
+        <script src="https://vuejs.org/js/vue.js"></script>
+        <h1 v-for="x in Number(one)">*</h1>
+        <script>
+            var vm = new Vue ({
+                el:"#app",
+                data:{
+                    one: 5
+                }
+            });
+        </script>
+    </body>
+</html>
+v-for="x in Number(rating)"
