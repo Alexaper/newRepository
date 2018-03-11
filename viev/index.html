@@ -4,19 +4,29 @@
     </head>
     <body>
         <div id="app">
-            <p>{{one}}</p>
-            <input type="range" min="0" max="5" step="1" value="5" v-model="one"> 
+            x<sup>2</sup>+
+            <input type="text" size="1" v-model.number="b">
+            x +
+            <input type="text" size="1" v-model/number="c">
+            = 0
+            <p>{{discr}}</p>
+            <p></p>
         </div>
         <script src="https://vuejs.org/js/vue.js"></script>
-        <h1 v-for="x in Number(one)">*</h1>
         <script>
             var vm = new Vue ({
                 el:"#app",
                 data:{
-                    one: 5
+                    discr: D,
+                },
+                computed:{
+                    discr: function(){
+                        var D=0;
+                        
+                        return sum/n;
+                    }
                 }
             });
         </script>
     </body>
 </html>
-v-for="x in Number(rating)"
